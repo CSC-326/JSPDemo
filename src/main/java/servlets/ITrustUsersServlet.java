@@ -1,11 +1,19 @@
 package main.java.servlets;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import javax.servlet.*;
 import javax.servlet.http.*;
+import javax.sql.DataSource;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/users")
@@ -38,10 +46,13 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("zenu");
 
       out.println("<ul>");
+
       for( String user : list  )
       {
     	  out.println("<li>"+ user +"</li>");
       }
+      
+
       out.println("<ul>");
       out.println("</html>");
    }

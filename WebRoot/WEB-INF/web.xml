@@ -6,8 +6,12 @@
 	<welcome-file-list>
 		<welcome-file>/redirect.jsp</welcome-file>
 	</welcome-file-list>
-
 	
+	<resource-env-ref>
+	    <resource-env-ref-name>jdbc/itrust</resource-env-ref-name>
+	    <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+	</resource-env-ref>
+		
 	<jsp-config>
 		<!-- Define our custom tag library -->
 		<taglib>
