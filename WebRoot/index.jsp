@@ -18,11 +18,23 @@
   
   <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
   
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  
+  <h3>Demo "Real" REST</h3>
+  <div id="todoNote">
+  </div>
+
+   <script>
+	  $.getJSON("/JSPDemo/rest/users/10/todos/1", function(data) 
+	   {
+			$("#todoNote").append( JSON.stringify(data) );	  
+	   });
+  </script>
   <h3>Highcharts Version</h3>
   
   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
   
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script>
 	  $.getJSON("/JSPDemo/api/users/10", function(data) 
