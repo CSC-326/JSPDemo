@@ -25,7 +25,7 @@
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script>
-	  $.getJSON("/JSPDemo/api/users", function(data) 
+	  $.getJSON("/JSPDemo/api/users/10", function(data) 
 	   {
 		  var days = [];
 		  for( var i = 0; i < data.Weights.length; i++ )
@@ -40,6 +40,7 @@
 		  console.log( weights )
 		  $('#container').highcharts(
 		  {
+			title: { text: "Chart for patient #" + data.user },
 			xAxis: {categories: days},
 			series: 
 				[

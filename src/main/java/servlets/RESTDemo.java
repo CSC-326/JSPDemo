@@ -12,12 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
-@WebServlet("/api/users")
+@WebServlet(urlPatterns="/api/users/*")
 public class RESTDemo extends HttpServlet 
 {
 
 	public static class Days
 	{
+		public String user;
 		public List<Weight> Weights;
 	}
 	
@@ -31,7 +32,12 @@ public class RESTDemo extends HttpServlet
 	public void doGet( HttpServletRequest request,
             HttpServletResponse response ) throws IOException
 	{
+		// Parse user id from url.
+		String user = request.getPathInfo();
+		user = user.replace("/","");
+		
 		Days days = new Days();
+		days.user = user;
 		days.Weights = new ArrayList<Weight>();
 		days.Weights.add(new Weight("12-21-2015", 123));
 		days.Weights.add(new Weight("12-22-2016", 124));
