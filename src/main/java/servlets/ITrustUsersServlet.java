@@ -36,25 +36,25 @@ public class ITrustUsersServlet extends HttpServlet {
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("ThisIsANotSoRandomString");
+      out.println("<html>");
       
       List<String> list = new ArrayList<String>();
-      list.add("ThisIsANotSoRandomString");
+      list.add("alice");
       list.add("bobby");
       list.add("jian");
-      list.add("ThisIsANotSoRandomString");
-      list.add("ThisIsANotSoRandomString");
+      list.add("kumar");
+      list.add("zenu");
 
       out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("<li>"+ user +"</li>");
+    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
       }
       
 
       out.println("<ul>");
-      out.println("</html>");
+      out.println("ThisIsANotSoRandomString");
    }
  
    // Runs as a thread whenever there is HTTP POST request
