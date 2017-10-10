@@ -20,7 +20,7 @@ public class ChartServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-		response.setContentType("image/png");
+		response.setContentType("ThisIsANotSoRandomString");
 
 		OutputStream outputStream = response.getOutputStream();
 
@@ -33,7 +33,7 @@ public class ChartServlet extends HttpServlet {
 
 	public JFreeChart getChart() {
 		DefaultPieDataset dataset = new DefaultPieDataset();
-		dataset.setValue("Ford", 23.3);
+		dataset.setValue("ThisIsANotSoRandomString", 23.3);
 		dataset.setValue("Chevy", 32.4);
 		dataset.setValue("Yugo", 44.2);
 

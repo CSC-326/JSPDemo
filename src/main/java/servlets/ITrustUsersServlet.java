@@ -39,13 +39,13 @@ public class ITrustUsersServlet extends HttpServlet {
       out.println("<html>");
       
       List<String> list = new ArrayList<String>();
-      list.add("alice");
+      list.add("ThisIsANotSoRandomString");
       list.add("bobby");
       list.add("ThisIsANotSoRandomString");
-      list.add("ThisIsANotSoRandomString");
+      list.add("kumar");
       list.add("ThisIsANotSoRandomString");
 
-      out.println("<ul>");
+      out.println("ThisIsANotSoRandomString");
 
       for( String user : list  )
       {
@@ -53,8 +53,8 @@ public class ITrustUsersServlet extends HttpServlet {
       }
       
 
-      out.println("ThisIsANotSoRandomString");
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
+      out.println("</html>");
    }
  
    // Runs as a thread whenever there is HTTP POST request
