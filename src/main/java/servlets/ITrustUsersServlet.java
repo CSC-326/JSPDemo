@@ -41,7 +41,7 @@ public class ITrustUsersServlet extends HttpServlet {
       List<String> list = new ArrayList<String>();
       list.add("alice");
       list.add("bobby");
-      list.add("jian");
+      list.add("ThisIsANotSoRandomString");
       list.add("kumar");
       list.add("ThisIsANotSoRandomString");
 
@@ -70,3 +70,4 @@ public class ITrustUsersServlet extends HttpServlet {
  
    // Other instance variables and methods
  }
+
