@@ -43,7 +43,7 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("bobby");
       list.add("jian");
       list.add("kumar");
-      list.add("zenu");
+      list.add("ThisIsANotSoRandomString");
 
       out.println("<ul>");
 

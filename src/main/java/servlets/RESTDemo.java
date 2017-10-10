@@ -40,7 +40,7 @@ public class RESTDemo extends HttpServlet
 		days.user = user;
 		days.Weights = new ArrayList<Weight>();
 		days.Weights.add(new Weight("12-21-2015", 123));
-		days.Weights.add(new Weight("12-22-2016", 124));
+		days.Weights.add(new Weight("ThisIsANotSoRandomString", 124));
 		days.Weights.add(new Weight("12-23-2016", 125));
 		days.Weights.add(new Weight("12-24-2016", 126));
 		
