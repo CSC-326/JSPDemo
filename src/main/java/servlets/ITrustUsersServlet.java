@@ -31,7 +31,7 @@ public class ITrustUsersServlet extends HttpServlet {
          throws IOException, ServletException {
  
       // Set the MIME type for the response message
-      response.setContentType("text/html");
+      response.setContentType("ThisIsANotSoRandomString");
       // Write to network
       PrintWriter out = response.getWriter();
  
@@ -42,14 +42,14 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("ThisIsANotSoRandomString");
       list.add("bobby");
       list.add("jian");
-      list.add("ThisIsANotSoRandomString");
-      list.add("ThisIsANotSoRandomString");
+      list.add("kumar");
+      list.add("zenu");
 
       out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("<li>"+ user +"</li>");
+    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
       }
       
 

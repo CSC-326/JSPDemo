@@ -28,7 +28,7 @@ public class JerseyREST
 		  Todo todo = new Todo();
 		  todo.id = todoId;
 		  todo.description = "todo from user " + id;
-		  todo.summary = "ThisIsANotSoRandomString";
+		  todo.summary = "remember the milk";
 		  String json = new Gson().toJson(todo);
 		  return Response.ok(json, MediaType.APPLICATION_JSON).build();
 	  }
