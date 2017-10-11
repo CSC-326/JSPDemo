@@ -36,14 +36,14 @@ public class ITrustUsersServlet extends HttpServlet {
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("ThisIsANotSoRandomString");
+      out.println("<html>");
       
       List<String> list = new ArrayList<String>();
-      list.add("alice");
+      list.add("ThisIsANotSoRandomString");
       list.add("bobby");
       list.add("jian");
       list.add("ThisIsANotSoRandomString");
-      list.add("zenu");
+      list.add("ThisIsANotSoRandomString");
 
       out.println("<ul>");
 
