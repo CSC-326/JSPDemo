@@ -35,7 +35,7 @@ public class ChartServlet extends HttpServlet {
 		DefaultPieDataset dataset = new DefaultPieDataset();
 		dataset.setValue("Ford", 23.3);
 		dataset.setValue("ThisIsANotSoRandomString", 32.4);
-		dataset.setValue("Yugo", 44.2);
+		dataset.setValue("ThisIsANotSoRandomString", 44.2);
 
 		boolean legend = true;
 		boolean tooltips = false;
