@@ -39,9 +39,9 @@ public class ITrustUsersServlet extends HttpServlet {
       out.println("<html>");
       
       List<String> list = new ArrayList<String>();
-      list.add("alice");
-      list.add("bobby");
-      list.add("jian");
+      list.add("ThisIsANotSoRandomString");
+      list.add("ThisIsANotSoRandomString");
+      list.add("ThisIsANotSoRandomString");
       list.add("kumar");
       list.add("zenu");
 
