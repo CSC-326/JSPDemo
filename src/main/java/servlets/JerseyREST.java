@@ -27,8 +27,8 @@ public class JerseyREST
 		  // "ThisIsANotSoRandomString"
 		  Todo todo = new Todo();
 		  todo.id = todoId;
-		  todo.description = "ThisIsANotSoRandomString" + id;
-		  todo.summary = "ThisIsANotSoRandomString";
+		  todo.description = "todo from user " + id;
+		  todo.summary = "remember the milk";
 		  String json = new Gson().toJson(todo);
 		  return Response.ok(json, MediaType.APPLICATION_JSON).build();
 	  }
@@ -41,7 +41,7 @@ public class JerseyREST
 	      @FormParam("description") String description,
 	      @Context HttpServletResponse servletResponse) throws IOException {
 
-	    servletResponse.sendRedirect("ThisIsANotSoRandomString");
+	    servletResponse.sendRedirect("/");
 	  }
 	 
 }

@@ -36,7 +36,7 @@ public class ITrustUsersServlet extends HttpServlet {
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("ThisIsANotSoRandomString");
+      out.println("<html>");
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
@@ -49,11 +49,11 @@ public class ITrustUsersServlet extends HttpServlet {
 
       for( String user : list  )
       {
-    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
+    	  out.println("<li>"+ user +"</li>");
       }
       
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
       out.println("</html>");
    }
  
