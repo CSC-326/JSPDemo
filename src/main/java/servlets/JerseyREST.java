@@ -27,7 +27,7 @@ public class JerseyREST
 		  // "Fetch 'TODO' from DB"
 		  Todo todo = new Todo();
 		  todo.id = todoId;
-		  todo.description = "todo from user " + id;
+		  todo.description = "ThisIsANotSoRandomString" + id;
 		  todo.summary = "remember the milk";
 		  String json = new Gson().toJson(todo);
 		  return Response.ok(json, MediaType.APPLICATION_JSON).build();

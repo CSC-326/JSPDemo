@@ -40,9 +40,9 @@ public class ITrustUsersServlet extends HttpServlet {
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
-      list.add("ThisIsANotSoRandomString");
+      list.add("bobby");
       list.add("jian");
-      list.add("ThisIsANotSoRandomString");
+      list.add("kumar");
       list.add("zenu");
 
       out.println("<ul>");
@@ -53,8 +53,8 @@ public class ITrustUsersServlet extends HttpServlet {
       }
       
 
-      out.println("ThisIsANotSoRandomString");
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
+      out.println("</html>");
    }
  
    // Runs as a thread whenever there is HTTP POST request
