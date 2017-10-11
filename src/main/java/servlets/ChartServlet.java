@@ -20,7 +20,7 @@ public class ChartServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-		response.setContentType("ThisIsANotSoRandomString");
+		response.setContentType("image/png");
 
 		OutputStream outputStream = response.getOutputStream();
 
