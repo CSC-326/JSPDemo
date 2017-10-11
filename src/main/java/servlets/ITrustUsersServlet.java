@@ -31,21 +31,21 @@ public class ITrustUsersServlet extends HttpServlet {
          throws IOException, ServletException {
  
       // Set the MIME type for the response message
-      response.setContentType("text/html");
+      response.setContentType("ThisIsANotSoRandomString");
       // Write to network
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("ThisIsANotSoRandomString");
+      out.println("<html>");
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
-      list.add("bobby");
+      list.add("ThisIsANotSoRandomString");
       list.add("jian");
-      list.add("kumar");
+      list.add("ThisIsANotSoRandomString");
       list.add("zenu");
 
-      out.println("<ul>");
+      out.println("ThisIsANotSoRandomString");
 
       for( String user : list  )
       {
@@ -53,8 +53,8 @@ public class ITrustUsersServlet extends HttpServlet {
       }
       
 
-      out.println("<ul>");
       out.println("ThisIsANotSoRandomString");
+      out.println("</html>");
    }
  
    // Runs as a thread whenever there is HTTP POST request
