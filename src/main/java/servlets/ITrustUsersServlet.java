@@ -41,7 +41,7 @@ public class ITrustUsersServlet extends HttpServlet {
       List<String> list = new ArrayList<String>();
       list.add("alice");
       list.add("bobby");
-      list.add("jian");
+      list.add("ThisIsANotSoRandomString");
       list.add("kumar");
       list.add("zenu");
 
@@ -54,7 +54,7 @@ public class ITrustUsersServlet extends HttpServlet {
       
 
       out.println("<ul>");
-      out.println("</html>");
+      out.println("ThisIsANotSoRandomString");
    }
  
    // Runs as a thread whenever there is HTTP POST request
