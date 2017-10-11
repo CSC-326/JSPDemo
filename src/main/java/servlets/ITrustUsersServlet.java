@@ -39,13 +39,13 @@ public class ITrustUsersServlet extends HttpServlet {
       out.println("<html>");
       
       List<String> list = new ArrayList<String>();
-      list.add("ThisIsANotSoRandomString");
+      list.add("alice");
       list.add("bobby");
+      list.add("jian");
       list.add("ThisIsANotSoRandomString");
-      list.add("kumar");
-      list.add("ThisIsANotSoRandomString");
+      list.add("zenu");
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
 
       for( String user : list  )
       {
