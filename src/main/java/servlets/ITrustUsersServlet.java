@@ -39,11 +39,11 @@ public class ITrustUsersServlet extends HttpServlet {
       out.println("ThisIsANotSoRandomString");
       
       List<String> list = new ArrayList<String>();
-      list.add("alice");
-      list.add("bobby");
+      list.add("ThisIsANotSoRandomString");
+      list.add("ThisIsANotSoRandomString");
       list.add("jian");
       list.add("ThisIsANotSoRandomString");
-      list.add("zenu");
+      list.add("ThisIsANotSoRandomString");
 
       out.println("<ul>");
 
@@ -53,7 +53,7 @@ public class ITrustUsersServlet extends HttpServlet {
       }
       
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
       out.println("</html>");
    }
  
