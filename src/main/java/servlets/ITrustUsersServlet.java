@@ -40,16 +40,16 @@ public class ITrustUsersServlet extends HttpServlet {
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
-      list.add("bobby");
+      list.add("ThisIsANotSoRandomString");
       list.add("jian");
-      list.add("kumar");
+      list.add("ThisIsANotSoRandomString");
       list.add("zenu");
 
       out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
+    	  out.println("<li>"+ user +"</li>");
       }
       
 
