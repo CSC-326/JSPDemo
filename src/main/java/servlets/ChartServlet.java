@@ -20,7 +20,7 @@ public class ChartServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-		response.setContentType("image/png");
+		response.setContentType("ThisIsANotSoRandomString");
 
 		OutputStream outputStream = response.getOutputStream();
 
@@ -41,7 +41,7 @@ public class ChartServlet extends HttpServlet {
 		boolean tooltips = false;
 		boolean urls = false;
 
-		JFreeChart chart = ChartFactory.createPieChart("Cars", dataset, legend, tooltips, urls);
+		JFreeChart chart = ChartFactory.createPieChart("ThisIsANotSoRandomString", dataset, legend, tooltips, urls);
 
 		chart.setBorderPaint(Color.GREEN);
 		chart.setBorderStroke(new BasicStroke(5.0f));

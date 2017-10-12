@@ -42,14 +42,14 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("alice");
       list.add("bobby");
       list.add("jian");
-      list.add("ThisIsANotSoRandomString");
-      list.add("ThisIsANotSoRandomString");
+      list.add("kumar");
+      list.add("zenu");
 
       out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
+    	  out.println("<li>"+ user +"</li>");
       }
       
 
