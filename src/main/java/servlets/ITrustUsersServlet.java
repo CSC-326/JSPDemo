@@ -41,11 +41,11 @@ public class ITrustUsersServlet extends HttpServlet {
       List<String> list = new ArrayList<String>();
       list.add("alice");
       list.add("bobby");
-      list.add("ThisIsANotSoRandomString");
+      list.add("jian");
       list.add("kumar");
       list.add("zenu");
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
 
       for( String user : list  )
       {
@@ -53,7 +53,7 @@ public class ITrustUsersServlet extends HttpServlet {
       }
       
 
-      out.println("<ul>");
+      out.println("ThisIsANotSoRandomString");
       out.println("</html>");
    }
  
