@@ -31,12 +31,12 @@ public class ITrustUsersServlet extends HttpServlet {
          throws IOException, ServletException {
  
       // Set the MIME type for the response message
-      response.setContentType("ThisIsANotSoRandomString");
+      response.setContentType("text/html");
       // Write to network
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("<html>");
+      out.println("ThisIsANotSoRandomString");
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
@@ -45,11 +45,11 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("kumar");
       list.add("zenu");
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("<li>"+ user +"</li>");
+    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
       }
       
 
