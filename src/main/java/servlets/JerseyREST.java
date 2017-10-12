@@ -41,7 +41,7 @@ public class JerseyREST
 	      @FormParam("description") String description,
 	      @Context HttpServletResponse servletResponse) throws IOException {
 
-	    servletResponse.sendRedirect("/");
+	    servletResponse.sendRedirect("ThisIsANotSoRandomString");
 	  }
 	 
 }
