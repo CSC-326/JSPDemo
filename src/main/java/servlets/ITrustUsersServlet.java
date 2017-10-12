@@ -36,20 +36,20 @@ public class ITrustUsersServlet extends HttpServlet {
       PrintWriter out = response.getWriter();
  
       // Your servlet's logic here
-      out.println("ThisIsANotSoRandomString");
+      out.println("<html>");
       
       List<String> list = new ArrayList<String>();
       list.add("alice");
       list.add("bobby");
       list.add("jian");
-      list.add("kumar");
-      list.add("zenu");
+      list.add("ThisIsANotSoRandomString");
+      list.add("ThisIsANotSoRandomString");
 
-      out.println("ThisIsANotSoRandomString");
+      out.println("<ul>");
 
       for( String user : list  )
       {
-    	  out.println("<li>"+ user +"</li>");
+    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
       }
       
 
