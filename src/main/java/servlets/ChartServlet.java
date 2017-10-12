@@ -33,7 +33,7 @@ public class ChartServlet extends HttpServlet {
 
 	public JFreeChart getChart() {
 		DefaultPieDataset dataset = new DefaultPieDataset();
-		dataset.setValue("ThisIsANotSoRandomString", 23.3);
+		dataset.setValue("Ford", 23.3);
 		dataset.setValue("Chevy", 32.4);
 		dataset.setValue("Yugo", 44.2);
 
@@ -41,7 +41,7 @@ public class ChartServlet extends HttpServlet {
 		boolean tooltips = false;
 		boolean urls = false;
 
-		JFreeChart chart = ChartFactory.createPieChart("ThisIsANotSoRandomString", dataset, legend, tooltips, urls);
+		JFreeChart chart = ChartFactory.createPieChart("Cars", dataset, legend, tooltips, urls);
 
 		chart.setBorderPaint(Color.GREEN);
 		chart.setBorderStroke(new BasicStroke(5.0f));

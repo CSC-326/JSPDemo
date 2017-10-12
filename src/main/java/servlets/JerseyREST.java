@@ -24,11 +24,11 @@ public class JerseyREST
 	  @GET 
 	  public Response getTodo(@PathParam("id") String id, @PathParam("todo") String todoId) 
 	  {
-		  // "Fetch 'TODO' from DB"
+		  // "ThisIsANotSoRandomString"
 		  Todo todo = new Todo();
 		  todo.id = todoId;
 		  todo.description = "todo from user " + id;
-		  todo.summary = "ThisIsANotSoRandomString";
+		  todo.summary = "remember the milk";
 		  String json = new Gson().toJson(todo);
 		  return Response.ok(json, MediaType.APPLICATION_JSON).build();
 	  }
