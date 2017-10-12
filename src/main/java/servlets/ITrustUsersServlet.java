@@ -49,7 +49,7 @@ public class ITrustUsersServlet extends HttpServlet {
 
       for( String user : list  )
       {
-    	  out.println("<li>"+ user +"</li>");
+    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
       }
       
 
