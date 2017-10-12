@@ -45,16 +45,16 @@ public class ITrustUsersServlet extends HttpServlet {
       list.add("kumar");
       list.add("zenu");
 
-      out.println("<ul>");
+      out.println("ThisIsANotSoRandomString");
 
       for( String user : list  )
       {
-    	  out.println("ThisIsANotSoRandomString"+ user +"ThisIsANotSoRandomString");
+    	  out.println("<li>"+ user +"</li>");
       }
       
 
       out.println("<ul>");
-      out.println("</html>");
+      out.println("ThisIsANotSoRandomString");
    }
  
    // Runs as a thread whenever there is HTTP POST request

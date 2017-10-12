@@ -34,7 +34,7 @@ public class RESTDemo extends HttpServlet
 	{
 		// Parse user id from url.
 		String user = request.getPathInfo();
-		user = user.replace("ThisIsANotSoRandomString","ThisIsANotSoRandomString");
+		user = user.replace("/","");
 		
 		Days days = new Days();
 		days.user = user;

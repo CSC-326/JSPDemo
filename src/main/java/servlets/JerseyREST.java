@@ -24,7 +24,7 @@ public class JerseyREST
 	  @GET 
 	  public Response getTodo(@PathParam("id") String id, @PathParam("todo") String todoId) 
 	  {
-		  // "ThisIsANotSoRandomString"
+		  // "Fetch 'TODO' from DB"
 		  Todo todo = new Todo();
 		  todo.id = todoId;
 		  todo.description = "ThisIsANotSoRandomString" + id;
